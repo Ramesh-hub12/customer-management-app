@@ -60,7 +60,7 @@ app.get("/api/customers/", async (request, response) => {
     order_by = "id",
     search_q = "",
   } = request.query;
-  const getCustomersQuery = `SELECT * FROM customers WHERE first_ame LIKE '%${search_q}%' ORDER BY ${order_by} ${order} LIMIT ${limit} OFFSET ${offset};`;
+  const getCustomersQuery = `SELECT * FROM customers WHERE first_name LIKE '%${search_q}%' ORDER BY ${order_by} ${order} LIMIT ${limit} OFFSET ${offset};`;
   const customersArray = await db.all(getCustomersQuery);
   response.send(customersArray);
 });

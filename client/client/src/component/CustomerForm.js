@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './CustomerForm.css'; // Assuming you have a CSS file for styling
+// import './CustomerForm.css'; // Assuming you have a CSS file for styling
 
 const API_BASE_URL = 'http://localhost:5000/api';
 
@@ -48,7 +48,7 @@ const CustomerForm = ({ customer, onSave, onCancel }) => {
         });
       } else {
         // Handle POST request for creating a new customer
-        await fetch(`${API_BASE_URL}`/customers, {
+        await fetch(`${API_BASE_URL}/customers`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

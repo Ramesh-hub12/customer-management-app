@@ -1,38 +1,55 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app-container{
   display: flex;
   flex-direction: column;
+  background-color: #fff;
+  height: 100vh;
+}
+.app-header{
+  background-color: aquamarine;
+  width: 100%;
+  padding: 15px 0 25px 0;
+}
+.header{
+  display: flex;
   align-items: center;
+  justify-content: flex-start;
+  margin-left: 20px;  
+}
+
+.home{
+  font-family: "Roboto";
+  font-size: 25px;
+  color: black;
+  font-weight: 700;
+  text-decoration: none;
+  margin-right: 20px;
+}
+.add-customers{
+   font-family: "Roboto";
+  font-size: 25px;
+  color: black;
+  font-weight: 700;
+  text-decoration: none;
+}
+.app-main{
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  align-items: center;
+  min-width: 1150px;
+  background-image: url('https://i.pinimg.com/736x/81/38/c2/8138c22a5a8ea015b8104bdfa80ca80f.jpg');
+  min-width: 1150px;
+  min-height: 90%;
 }

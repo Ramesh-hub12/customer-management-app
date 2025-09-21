@@ -1,0 +1,45 @@
+
+.customerTableContainer{
+  border-radius: 12px;
+  padding-left: 0px;
+  list-style-type: none;
+  overflow: hidden;
+}
+.CustomerHeader{
+  display: flex;
+  background-color: #378caf;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 50px;
+}
+
+.firstName {
+  color: #f1f5f9;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 16px;
+  width: 20%;
+  margin: 0px;
+  padding-right: 30px;
+}
+
+ .lastName{
+  color: #f1f5f9;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 16px;
+  width: 30%;
+   margin: 0px;
+  padding-right: 30px;
+ }
+
+.PhoneNumber {
+  color: #f1f5f9;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 16px;
+  width: 15%;
+   margin: 0px;
+  padding-right: 30px;
+}
+

@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import AddressForm from './AddressForm'; // Re-use the form component you created
-import './AddressList.css'; // Assuming you have a CSS file for styling
+import AddressForm from './AddressForm'; 
 
-const API_BASE_URL = 'http://localhost:5000/api';
+const API_BASE_URL = 'http://localhost:5000/api/customers';
 
 const AddressList = ({ customerId }) => {
   const [addresses, setAddresses] = useState([]);
   const [editingAddress, setEditingAddress] = useState(null);
-  const [view, setView] = useState('list'); // 'list' or 'form'
+  const [view, setView] = useState('list'); 
 
   useEffect(() => {
     if (customerId) {
@@ -17,7 +16,7 @@ const AddressList = ({ customerId }) => {
 
   const fetchAddresses = async () => {
     try {
-      const response = await fetch(`${API_BASE_URL}`/customers/`${customerId}`/addresses);
+      const response = await fetch(`${API_BASE_URL}/${customerId}/addresses`);
       if (response.ok) {
         const data = await response.json();
         setAddresses(data);
@@ -36,7 +35,7 @@ const AddressList = ({ customerId }) => {
 
   const handleDelete = async (addressId) => {
     try {
-      const response = await fetch(`${API_BASE_URL}`/addresses/`${addressId}`, {
+      const response = await fetch(`${API_BASE_URL}/addresses/${addressId}`, {
         method: 'DELETE',
       });
       if (response.ok) {

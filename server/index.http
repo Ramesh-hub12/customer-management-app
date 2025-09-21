@@ -3,7 +3,7 @@
 
 ###
 
-GET http://localhost:5000/api/customers/?search_q=Ramesh
+GET http://localhost:5000/api/customers/
 Content-Type: application/json
 
 ###
